@@ -1,7 +1,7 @@
 $(document).on('ready', function(){
     
   'use strict';
-
+    //intro guide
   var introguide = introJs();
   // var startbtn   = $('#startdemotour');
   introguide.setOptions({
@@ -34,6 +34,6 @@ $(document).on('ready', function(){
    
    ]
   });
-  introguide.start();
+ /* introguide.start();*/
 
 });

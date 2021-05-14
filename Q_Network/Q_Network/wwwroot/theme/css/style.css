@@ -1534,11 +1534,11 @@ header.sticky {
     width: 100%;
     border: none;
 }
-.newpst-input textarea:focus, 
+/*.newpst-input textarea:focus, 
 .newpst-input textarea:active {
     outline: medium none;
     border: none;
-}
+}*/
 .create-post {
     border-bottom: 1px solid #e6ecf5;
     display: block;
@@ -6657,14 +6657,14 @@ a.addnewforum {
     z-index: 2;
 }
 .postoverlay {
-  background-color: rgba(0,0,0,.8);
+ /* background-color: rgba(0,0,0,.8);
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 99;
-  display: none;
+  display: none;*/
 }
 
 .monthly-weather {
