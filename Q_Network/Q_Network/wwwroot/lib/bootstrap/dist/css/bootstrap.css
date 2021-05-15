@@ -5970,6 +5970,7 @@ a.close.disabled {
 }
 
 .tooltip .arrow {
+    display:none;
   position: absolute;
   display: block;
   width: 0.8rem;

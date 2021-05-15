@@ -14,7 +14,7 @@ function AudioPlayer(options) {
 
   //Background, highlight and hover respectively.
   this.bgColour = options.bgColour === undefined ? "#a8b0b6" : options.bgColour;
-  this.hlColour = options.hlColour === undefined ? "#fa6342" : options.hlColour;
+  this.hlColour = options.hlColour === undefined ? "#a35078" : options.hlColour;
   this.hvColour = options.hvColour === undefined ? "#e0e0e0" : options.hvColour;
 
   //Internal stuff

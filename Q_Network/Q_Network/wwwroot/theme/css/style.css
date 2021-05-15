@@ -51,6 +51,9 @@ Start Date:  8/August/19
 /*===============
 ***General Styling 
 ===============*/
+:root {
+    --colormain: #a35078;
+}
 html,body{
 	font-family: "Roboto", "Segoe Ui";
 }
@@ -314,7 +317,7 @@ section {
     background: #9e72fa;
 }
 .orange:before {
-    background: #fa6342;
+    background: #a35078;
 }
 
 .exthigh-opacity:before {
@@ -522,7 +525,7 @@ ul.owl-carousel {
 .owl-next::before {
     background: #fff;
     border-radius: 50%;
-    color: #fa6342;
+    color: #a35078;
     content: "\f0d9";
     display: inline-block;
     font-family: fontawesome;
@@ -547,7 +550,7 @@ ul.owl-carousel {
 }
 /*--- owl nav style ---*/
 .owl-dot {
-    border: 1px solid #fa6342;
+    border: 1px solid #a35078;
     border-radius: 100%;
     display: inline-block;
     height: 10px;
@@ -561,7 +564,7 @@ ul.owl-carousel {
     width: 100%;
 }
 .owl-dot.active::before {
-    background: #fa6342;
+    background: #a35078;
     border-radius: 100%;
     content: "";
     height: 6px;
@@ -1970,7 +1973,7 @@ a.learnmore:hover{
     font-size: 16px;
     font-weight: 400;
     position: relative;
-	color: #adadfd;
+	/*color: #adadfd;*/
 }
 .we-video-info > ul li span.comment{cursor: pointer;}
 .we-video-info > ul li span:hover i{
@@ -2668,7 +2671,7 @@ footer {
 }
 
 footer::before {
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #ffffff 0%, #fa6342 50%, #ffffff 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #ffffff 0%, #a35078 50%, #ffffff 100%) repeat scroll 0 0;
     content: "";
     height: 5px;
     position: absolute;
@@ -6874,7 +6877,7 @@ a.addnewforum {
     vertical-align: middle;
 }
 .profile-controls > li:first-child > a{
-	background: #fa6342;
+	background: #a35078;
 }
 .profile-controls > li:nth-child(2) > a{
 	background: #7750f8;
@@ -6979,7 +6982,7 @@ a.addnewforum {
     vertical-align: middle;
 }
 .profile-menu > li > a.active::after {
-    border-bottom: 10px solid #fa6342;;
+    border-bottom: 10px solid #a35078;;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     bottom: 0;
@@ -8145,7 +8148,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	border-radius: 5px;
 }
 .item-upload > i {
-    color: #fa6342;
+    color: #a35078;
     font-size: 40px;
 }
 .upload-meta {
@@ -9045,7 +9048,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     background: #535165 none repeat scroll 0 0;
 }
 .color-box.orange-box {
-    background: #fa6342 none repeat scroll 0 0;
+    background: #a35078 none repeat scroll 0 0;
 }
 .color-box.blue-box {
     background: #23d2e2 none repeat scroll 0 0;
@@ -9779,7 +9782,7 @@ svg #shadow_1_ {
     margin-bottom: 15px;
 }
 .progress-bar {
-    background-color: #fa6342;
+    background-color: #a35078;
     font-size: 9px;
 }
 
@@ -10626,7 +10629,7 @@ span.ttl {
 .progres circle {
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s ease;
-    stroke: #fa6342;
+    stroke: #a35078;
     stroke-width: 4px;
 }
 
@@ -10906,7 +10909,7 @@ aside .widget.pitnik-links > ul > li > a {
     border-radius: 4px;
     padding: 30px 20px 20px;
     text-align: center;
-	border-top: 1px solid #fa6342;
+	border-top: 1px solid #a35078;
 }
 .comon-help > span > i {
     font-size: 50px;
@@ -10934,7 +10937,7 @@ aside .widget.pitnik-links > ul > li > a {
 	color: #7750f8;	
 }
 .color-orange{
-	color: #fa6342;	
+	color: #a35078;	
 }
 .color-blue{
 	color: #23d2e2;	
@@ -11090,7 +11093,7 @@ aside .widget.pitnik-links > ul > li > a {
 .nav-list > li ul {
     background: #2a3c53 none repeat scroll 0 0;
     border-radius: 0 0 4px 4px;
-    border-top: 1px solid #fa6342;
+    border-top: 1px solid #a35078;
     list-style: outside none none;
     margin: 0;
     opacity: 0;
@@ -14010,7 +14013,7 @@ a.circle-btn:hover {
 }
 .wave .dot {
   display: inline-block;
-	background: #fa6342;
+	background: #a35078;
   width: 9px;
   height: 9px;
   -webkit-border-radius: 100%;
@@ -14152,7 +14155,7 @@ a.circle-btn:hover {
 	display: inline-block;
 }
 .links-tab li.nav-item > a.active:after {
-    border-bottom: 10px solid #fa6342;
+    border-bottom: 10px solid #a35078;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     bottom: 0;
@@ -14404,7 +14407,7 @@ a.circle-btn:hover {
  .ac-play-container .ac-play {
 	 font-family: "FontAwesome";
 	 border-radius: 50%;
-	 background-color: #fa6342;
+	 background-color: #a35078;
 	 border: none;
 	 color: #fff;
 	 font-size: 20px;
@@ -16050,11 +16053,11 @@ a.shopping-cart > i {
 	border: none;
 }
 .pop-box:hover{
-    border-color: #fa6342;
+    border-color: #a35078;
 }
 .pop-box:hover .modl-box,
 .pop-box > button:hover{
-    color: #fa6342;
+    color: #a35078;
 }
 .pop-box > button:hover{
 	background: none;
@@ -17108,10 +17111,10 @@ a.date {
 footer.dark{
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,fa6342+100 */
 background: #eeeeee; /* Old browsers */
-background: -moz-linear-gradient(top,  #eeeeee 0%, #fa6342 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #eeeeee 0%,#fa6342 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #eeeeee 0%,#fa6342 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#fa6342',GradientType=0 ); /* IE6-9 */
+background: -moz-linear-gradient(top,  #eeeeee 0%, #a35078 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #eeeeee 0%,#a35078 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #eeeeee 0%,#a35078 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#a35078',GradientType=0 ); /* IE6-9 */
 
 }
 footer.style2 {
@@ -17185,7 +17188,7 @@ footer.style2 .share-article {
 }
 .leter-input input {
     background: #fff none repeat scroll 0 0;
-    border: 1px solid #fa6342;
+    border: 1px solid #a35078;
     border-radius: 40px;
     display: inline-block;
     padding: 13px 20px;
@@ -17782,7 +17785,7 @@ nav .main-btn{margin-left: 20px;}
     background: #e1e6ea none repeat scroll 0 0;
 }
 .post-title.gry-bg > h6 {
-    color: #fa6342;
+    color: #a35078;
 }
 .post-title.gry-bg > span {
     color: red;
@@ -17853,7 +17856,7 @@ nav .main-btn{margin-left: 20px;}
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #fa6342;
+  background: #a35078;
 	width: 100%;
   position: fixed;
 	z-index: 9999999;

@@ -1516,7 +1516,7 @@
 
 @media screen and (max-width: 640px) {
 	.profile-menu > li > a.active::after {
-	    border-bottom: 6px solid #fa6342;
+	    border-bottom: 6px solid #a35078;
 	    border-left: 7px solid transparent;
 	    border-right: 7px solid transparent;
 	}    

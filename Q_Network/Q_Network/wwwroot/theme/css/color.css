@@ -271,7 +271,7 @@ span.ttl,
 .single-btn > li > a,
 .widget .grouppage-info > li
 {
-	color: #fa6342;	
+	color: #a35078;	
 }
 
 
@@ -390,11 +390,11 @@ a.date,
 .sugtd-frnd-meta .send-invitation,
 .user-profile .join-btn
 {
-	background: #fa6342;
+	background: #a35078;
 }
 
 .stroke-solid {
-	fill: #fa6342;
+	fill: #a35078;
 }
 
 
@@ -424,18 +424,18 @@ a.btn2:hover,
 .qty-select .qty.form-control,
 .extras > a.play-btn
 {
-	border-color: #fa6342;	
+	border-color: #a35078;	
 }
 
 #nprogress .spinner-icon{
-	border-left-color: #fa6342;
+	border-left-color: #a35078;
 }
 #nprogress .spinner-icon,
 .search-tab .nav-tabs .nav-item > a.active::before
 {
-	border-top-color: #fa6342;		
+	border-top-color: #a35078;		
 }
 .timeline-info > ul li a:after,
 .popup::after{
-	border-bottom-color: #fa6342;
+	border-bottom-color: #a35078;
 }

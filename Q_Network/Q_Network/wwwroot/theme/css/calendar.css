@@ -207,7 +207,7 @@ html .fc,
     text-transform: uppercase;
 }
 .fc-state-down, .fc-state-active, .fc-state-disabled {
-    background:  #fa6342;
+    background:  #a35078;
     color: #FFFFFF;
     font-size: 12px;
     font-weight: 600;

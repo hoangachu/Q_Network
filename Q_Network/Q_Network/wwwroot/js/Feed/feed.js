@@ -35,11 +35,22 @@
         $('.sectionpreviewlink').css('display', 'none');
 
     });
+    $('.divtxtcreatepost').click(function () {
+        debugger;
+        $('#modalcreatepost').modal('show');
+    });
+    $('.lilike').toolbar({
+        content: '#toolbar--like-options',
+        position: 'top',
+        style: 'white',
+        hideOnClick: true,
+    });
 })();
 
 window.onload = function () {
-
-
+    //$('.fa-eye').toolbar({
+    //    content: '#toolbar-options',
+    //});
 };
 
 function preview() {

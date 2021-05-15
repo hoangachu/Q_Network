@@ -5,6 +5,9 @@
 }
 <link href="~/theme/css/nprogress.css" rel="stylesheet" />
 <link href="~/css/feed/feed.css" rel="stylesheet" />
+<script src="~/tooltipbar/jquery.toolbar.js"></script>
+<script src="~/tooltipbar/jquery.toolbar.min.js"></script>
+<link href="~/tooltipbar/jquery.toolbar.css" rel="stylesheet" />
 
 <section>
     <div class="gap2 gray-bg">
@@ -298,9 +301,10 @@
                                         <form>
                                             <div class="divwhatmind" style="display:flex;">
                                                 <span> <img src="~/theme/images/apple.png" class="imgavata" /></span>
-                                                <div rows="2" id="txtcreatepost">
-                                                    <p class="pwhatmind">What's on your mind, Hoàng?</p>
+                                                <div rows="2" id="txtcreatepost" class="divtxtcreatepost" data-toggle="modal" data-target="#modalcreatepost">
+                                                    <span class="pwhatmind">What's on your mind, Hoàng?</span>
                                                 </div>
+
                                             </div>
 
                                             <section class="section sectionpreviewlink">
@@ -322,40 +326,46 @@
                                     </div>
                                     <div class="attachments">
                                         <ul>
-                                            <li>
-                                                <span class="add-loc">
-                                                    <i class="fa fa-map-marker"></i>
+                                            <li class="liattachments">
+
+                                                <span class="add-loc ml-1">
+                                                    <i class="fas fa-image"></i><label class="ml-1">Photo</label>
                                                 </span>
                                             </li>
-                                            <li>
-                                                <i class="fa fa-music"></i>
-                                                <label class="fileContainer">
-                                                    <input type="file">
-                                                </label>
+                                            <li class="liattachments ml-5">
+                                                <span class="add-loc ml-1">
+                                                    <i class="fab fa-youtube"></i><label class="ml-1">Video</label>
+                                                </span>
+                                                @*<i class="fa fa-music"></i>
+                                                    <label class="fileContainer">
+                                                        <input type="file">
+                                                    </label>*@
+                                            </li>
+                                            <li class="liattachments ml-5">
+                                                <span class="add-loc ml-1">
+                                                    <i class="fad fa-calendar-alt"></i><label class="ml-1">Event</label>
+                                                </span>
+                                            </li>
+                                            <li class="liattachments ml-5">
+                                                <span class="add-loc ml-1">
+                                                    <i class="fas fa-image"></i><label class="ml-1">Event</label>
+                                                </span>
+                                                @*<i class="fa fa-video-camera"></i>
+                                                    <label class="fileContainer">
+                                                        <input type="file">
+                                                    </label>*@
                                             </li>
                                             <li>
-                                                <i class="fa fa-image"></i>
-                                                <label class="fileContainer">
-                                                    <input type="file">
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-video-camera"></i>
-                                                <label class="fileContainer">
-                                                    <input type="file">
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <i class="fa fa-camera"></i>
-                                                <label class="fileContainer">
-                                                    <input type="file">
-                                                </label>
+                                                @*<i class="fa fa-camera"></i>
+                                                    <label class="fileContainer">
+                                                        <input type="file">
+                                                    </label>*@
                                             </li>
                                             @*<li class="preview-btn">
-                                                <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
-                                            </li>*@
+                                                    <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
+                                                </li>*@
                                         </ul>
-                                        <button class="post-btn" type="submit" data-ripple="">Post</button>
+                                        @*<button class="post-btn" type="submit" data-ripple="">Post</button>*@
                                     </div>
                                     <div class="add-location-post">
                                         <span>Drag map point to selected area</span>
@@ -399,7 +409,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <ins><a href="time-line.html" title="">Jack Carter</a> share <a href="#" title="">link</a></ins>
+                                                <ins><a href="time-line.html" title="" class="publishername">Jack Carter</a> share <a href="#" title="">link</a></ins>
                                                 <span><i class="fa fa-globe"></i> published: january,5 2010 19:PM </span>
                                             </div>
                                             <div class="post-meta">
@@ -415,11 +425,11 @@
                                                         </i>
                                                         <h2>Canada tourist spots you must visit in 2020</h2>
                                                     </a>
-                                                    <ul class="like-dislike">
-                                                        <li><a class="bg-purple" href="#" title="Save to Pin Post"><i class="fa fa-thumb-tack"></i></a></li>
-                                                        <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
-                                                        <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
-                                                    </ul>
+                                                    @*<ul class="like-dislike">
+                                                            <li><a class="bg-purple" href="#" title="Save to Pin Post"><i class="fa fa-thumb-tack"></i></a></li>
+                                                            <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
+                                                            <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
+                                                        </ul>*@
 
                                                 </figure>
                                                 <div class="description">
@@ -428,33 +438,30 @@
                                                     </p>
                                                 </div>
                                                 <div class="we-video-info">
-                                                    <ul>
-                                                        <li>
+                                                    <ul class="ulinteraction">
+                                                        <li class="lilike">
                                                             <span class="views" title="views">
-                                                                <i class="fa fa-eye"></i>
-                                                                <ins>1.2k</ins>
+                                                                <img src="~/images/likenotanimate.png"  style="height:31px !important"/>
+                                                                Like
                                                             </span>
                                                         </li>
-                                                        <li>
-                                                            <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
-                                                        </li>
-                                                        <li>
-                                                            <span class="comment" title="Comments">
-                                                                <i class="fa fa-commenting"></i>
-                                                                <ins>52</ins>
+                                                        <li class="licomment ml-5">
+                                                            <span class="comments" title="comments">
+                                                                <img src="~/images/comment.png" style="height:31px !important"/>
+                                                                Comment
                                                             </span>
-                                                        </li>
 
-                                                        <li>
-                                                            <span>
-                                                                <a class="share-pst" href="#" title="Share">
-                                                                    <i class="fa fa-share-alt"></i>
-                                                                </a>
-                                                                <ins>20</ins>
+                                                        </li>
+                                                        <li class="lishare ml-3">
+                                                            <span class="shares" title="shares">
+                                                                <img src="~/images/share.png" style="height:31px !important"/>
+                                                                Share
                                                             </span>
+
                                                         </li>
                                                     </ul>
-                                                    <div class="users-thumb-list">
+                                                    <!--user tương tác với post-->
+                                                    @*<div class="users-thumb-list">
                                                         <a data-toggle="tooltip" title="" href="#" data-original-title="Anderw">
                                                             <img alt="" src="images/resources/userlist-1.jpg">
                                                         </a>
@@ -471,7 +478,7 @@
                                                             <img alt="" src="images/resources/userlist-5.jpg">
                                                         </a>
                                                         <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                                                    </div>
+                                                    </div>*@
                                                 </div>
                                             </div>
                                             <div class="coment-area" style="">
@@ -551,7 +558,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="central-meta item" style="display: inline-block;">
+                                <!--<div class="central-meta item" style="display: inline-block;">
                                     <div class="user-post">
                                         <div class="friend-info">
                                             <figure>
@@ -715,8 +722,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div><!-- digital sponsors -->
-                                <div class="central-meta item" style="display: inline-block;">
+                                </div>-->
+                                <!-- digital sponsors -->
+                                <!--<div class="central-meta item" style="display: inline-block;">
                                     <div class="user-post">
                                         <div class="friend-info">
                                             <figure>
@@ -1079,9 +1087,9 @@
                                                         <li><a class="bg-blue" href="#" title="Like Post"><i class="ti-thumb-up"></i></a></li>
                                                         <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
                                                     </ul>
-                                                </div><!-- near by map -->
-
-                                                <div class="description">
+                                                </div>-->
+                                <!-- near by map -->
+                                <!--<div class="description">
                                                     <p>
                                                         Curabitur Lonely Cat Enjoying in Summer <a href="#" title="">#mypage</a> ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
                                                     </p>
@@ -1229,10 +1237,10 @@
                                                             <li><i class="fa fa-clock-o"></i>Schedule Post</li>
                                                             <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
                                                             <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
-                                                        </ul>
+                                                        </ul>`
                                                     </div>
                                                 </div>
-                                                <ins><a href="time-line.html" title="">Jack Carter</a> Post Album</ins>
+                                                <ins><a href="time-line.html" title="" class="publishername">Jack Carter</a> Post Album</ins>
                                                 <span><i class="fa fa-globe"></i> published: September,15 2020 19:PM </span>
                                             </div>
                                             <div class="post-meta">
@@ -1406,7 +1414,7 @@
                                         </div>
 
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
 
                         </div>
@@ -1563,7 +1571,6 @@
                                         <li><a href="#" title="">contetn policy</a></li>
                                         <li><a href="#" title="">User Policy</a></li>
                                     </ul>
-                                    <p>© Pitnik 2020. All Rights Reserved.</p>
                                 </div><!-- little links -->
                             </aside>
                         </div><!-- sidebar -->
@@ -1573,7 +1580,28 @@
         </div>
     </div>
 </section>
+<div>
+    @Html.Partial("_CreatePost")
+</div>
+<!--toolbar like button-->
+<div id="toolbar--like-options" class="hidden">
+    <a href="#">
+        <img src="~/images/like.gif" />
+    </a>
+    <a href="#">
+        <img src="~/images/okface.gif" />
+    </a>
+    <a href="#">
+        <img src="~/images/sad.gif" />
+    </a>
+    <a href="#">
+        <img src="~/images/anywayface.gif" />
+    </a>
+    <a href="#">
+        <img src="~/images/icons8-happy.gif" />
+    </a>
 
+</div>
 @*<script src="js/main.min.js"></script>*@
 @*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script>*@
 @*<script src="js/locationpicker.jquery.js"></script>*@
@@ -1608,3 +1636,4 @@
             });
     </script>*@
 <script src="~/js/Feed/feed.js"></script>
+<script src="~/js/Tooltip/tooltip.js"></script>

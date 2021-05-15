@@ -242,3 +242,4 @@ D:\Document\Q_Network\Q_Network\Q_Network\obj\Debug\net5.0\ref\Q_Network.dll
 D:\Document\Q_Network\Q_Network\Q_Network\obj\Debug\net5.0\Q_Network.pdb
 D:\Document\Q_Network\Q_Network\Q_Network\obj\Debug\net5.0\Q_Network.genruntimeconfig.cache
 D:\Document\Q_Network\Q_Network\Q_Network\obj\Debug\net5.0\Q_Network.csprojAssemblyReference.cache
+D:\Document\Q_Network\Q_Network\Q_Network\obj\Debug\net5.0\Razor\Views\Feed\_CreatePost.cshtml.g.cs
